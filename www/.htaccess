@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond %{REQUEST_METHOD} ^(POST) [NC]
+RewriteRule ^api$ index.php?action=add [L]
+RewriteCond %{REQUEST_METHOD} ^(GET) [NC]
+RewriteRule ^api/([0-9]+)$ index.php?action=view&id=$1 [L]
+RewriteCond %{REQUEST_METHOD} ^(PUT) [NC]
+RewriteRule ^api/([0-9]+)$ index.php?action=edit&id=$1 [L]
+RewriteCond %{REQUEST_METHOD} ^(DELETE) [NC]
+RewriteRule ^api/([0-9]+)$ index.php?action=delete&id=$1 [L]
