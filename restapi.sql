@@ -1,5 +1,5 @@
-CREATE TABLE IF NOT EXISTS books (
-	id INT(10) UNSIGNED NOT_NULL AUTO_INCREMENT,
-	title VARCHAR (255),
-	PRIMARY KEY (id)
+CREATE TABLE IF NOT EXISTS `books` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255),
+  PRIMARY KEY (`id`)
 );
