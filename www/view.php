@@ -5,7 +5,12 @@ GetDecideMethod("GET");
 
 $sql = "SELECT * FROM `books` LIMIT :page,100"; // get 100 records at a time
 
-$page = (int) $_GET['page'];
+if(!isset($_GET['page'])){
+	$page = 1;
+} else {
+	$page = (int) $_GET['page'];
+
+}
 $page = $page - 1;
 
 $stmt = $pdo->prepare($sql);
