@@ -7,3 +7,5 @@ Run restapi.sql in phpmyadmin or equivalent.
 Edit config.php to correct configuration of your mysql server
 
 Upload contents in www folder to your apache server
+
+Edit bugs apparent in the code.
